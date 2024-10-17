@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi"
 
 //components
 import Social from "@/components/Social"
+import Photo from "@/components/Photo"
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
         <div className="container mx-auto h-full">
             <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                 {/* Text */}
-                <div className="text-center xl:text-left">
+                <div className="text-center xl:text-left order-2 xl:order-none">
                     <span className="text-xl">FullStack Developer</span>
                     <h1 className="h1 mb-6">
                         Hola! Soy <br /> <span className="text-accent">Juan Felipe Chilito</span>
@@ -33,7 +34,9 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Photo */}
-                <div>Photo</div>
+                <div className="order-1 xl:order-none mb-8 xl:mb-0">
+                    <Photo />
+                </div>
             </div>
         </div>
     </section>
