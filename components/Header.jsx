@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 // Componets
 import Nav from "./Nav";
@@ -10,9 +11,12 @@ const Header = () => {
     return <header className="py-8 xl:py-12 text-white">
         <div className="container mx-auto flex justify-between items-center">
             <Link href="/">
-                <h1 className="text-4xl font-semibold">
-                    Juan Chilito<span className="text-accent">.</span> 
-                </h1>
+                <Image 
+                    src= "/assets/JFC.png"
+                    width={150}
+                    height={50}
+                    alt="Juan Felipe Chilito"
+                />
             </Link>
             {/* desktop nav & hire me button*/}
             <div className="hidden xl:flex items-center gap-8">
