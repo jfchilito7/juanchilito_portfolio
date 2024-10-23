@@ -12,20 +12,19 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 import Link from "next/link";
 import Image from "next/image";
-import { Github } from "lucide-react";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
     {
         num: "01",
-        category: 'frontend',
-        title: 'Project 1',
-        description: 'This is a project',
+        category: 'Front-end',
+        title: 'Popcorn-Movies',
+        description: 'Popcorn Movies es una aplicación web que permite a los usuarios descubrir películas populares de manera visual e intuitiva. La interfaz minimalista muestra una galería de pósteres de películas, proporcionando una navegación fluida. El proyecto incluye una integración con una API de películas, que actualiza automáticamente la lista de películas mostradas, asegurando información precisa y actualizada. Este proyecto fue desarrollado utilizando HTML, CSS, JavaScript, y demuestra mi capacidad para trabajar con APIs y crear aplicaciones web dinámicas.',
         stack: [
             {name: "HTML5"}, {name: "CSS3"}, {name: "JavaScript"}, {name: "Figma"}, {name: "GitHub"}],
-            image: '/assets/work/thumb1.png',
-            live: 'https://www.google.com',
-            github: 'https://www.github.com',
+            image: '/assets/work/project1.png',
+            live: 'https://jfchilito7.github.io/Popcorn-Movies',
+            github: 'https://github.com/jfchilito7/Popcorn-Movies',
     },
     {
         num: "02",
@@ -71,11 +70,12 @@ const Work = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-[30px]">
                     <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-                        <div className="flex flex-col gap-[30px] h-[50%]">
+                        <div className="flex flex-col gap-[10px] h-[50%]">
                             {/* Outline num */}
                             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-                            {/* Project category */}
-                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} Project</h2>
+                            {/* Project title */}
+                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
+                        <h2 className="text-[20px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category}</h2>
                         {/* Project description */}
                         <p className="text-white/60">{project.description}</p>
                         {/* Stack */}
@@ -93,7 +93,7 @@ const Work = () => {
                         {/* Buttons */}
                         <div className="flex items-center gap-4">
                             {/* Live project button */}
-                            <Link href={project.live}>
+                            <Link href={project.live} target="_blank" rel="noopener noreferrer">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -106,7 +106,7 @@ const Work = () => {
                                 </TooltipProvider>
                             </Link>
                             {/* github project button */}
-                            <Link href={project.github}>
+                            <Link href={project.github} target="_blank" rel="noopener noreferrer">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

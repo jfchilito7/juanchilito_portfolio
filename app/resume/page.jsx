@@ -87,6 +87,16 @@ const education = {
       duration: "2017 - 2023"
     }, 
     {
+      institution: "CertiProf",
+      degree: "SCRUM MASTER PROFESSIONAL - SMPCⓇ",
+      duration: "Abril 2024"
+    }, 
+    {
+      institution: "CertiProf",
+      degree: "SCRUM PRODUCT OWNER PROFESSIONAL - SPOPCⓇ",
+      duration: "Abril 2024"
+    }, 
+    {
       institution: "Institución Educativa Instituto Técnico, Santander de Quilichao.",
       degree: "Bachiller académico",
       duration: "2011 - 2016"
