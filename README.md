@@ -1,8 +1,11 @@
 # JuanChilito Portfolio – Web Portfolio Template 🎨
 
-![Preview](./assets/mockup.png) <!-- Asegúrate de tener esta imagen o ajusta la ruta -->
-
 Este es un **template de portafolio web moderno y personalizable** construido con tecnologías actuales, pensado para ayudar a desarrolladores, diseñadores y creativos a mostrar su trabajo de manera profesional y atractiva.
+
+![Preview](/public/assets/inicio.png)
+![Proyecto](/public/assets/proyectos.png)
+![Servicios](/public/assets/servicios.png)
+![Estudios](/public/assets/experiencia.png)
 
 ## 🚀 Demo
 
@@ -23,23 +26,6 @@ Accede a la demo en vivo: [https://juanchilito-portfolio.vercel.app/](https://ju
 - Secciones personalizables: Sobre mí, Proyectos, Contacto
 - Carga dinámica de proyectos mediante un archivo de configuración (`constants.js`)
 - Fácil de adaptar a tu estilo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
