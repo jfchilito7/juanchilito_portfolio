@@ -22,7 +22,7 @@ const projects = [
         description: 'Popcorn Movies es una aplicación web que permite a los usuarios descubrir películas populares de manera visual e intuitiva. La interfaz minimalista muestra una galería de pósteres de películas, proporcionando una navegación fluida. El proyecto incluye una integración con una API de películas, que actualiza automáticamente la lista de películas mostradas, asegurando información precisa y actualizada. Este proyecto fue desarrollado utilizando HTML, CSS, JavaScript, y demuestra mi capacidad para trabajar con APIs y crear aplicaciones web dinámicas.',
         stack: [
             {name: "HTML5"}, {name: "CSS3"}, {name: "JavaScript"}, {name: "Figma"}, {name: "GitHub"}],
-            image: '/assets/work/project1.png',
+            video: '/assets/work/popcorn_movies.mp4',
             live: 'https://jfchilito7.github.io/Popcorn-Movies',
             github: 'https://github.com/jfchilito7/Popcorn-Movies',
     },
@@ -33,7 +33,7 @@ const projects = [
         description: 'This is a project',
         stack: [
             {name: "HTML5"}, {name: "CSS3"}, {name: "JavaScript"}, {name: "Figma"}, {name: "GitHub"}],
-            image: '/assets/work/thumb1.png',
+            video: '/assets/work/thumb1.png',
             live: 'https://www.google.com',
             github: 'https://www.github.com',
     },
@@ -44,7 +44,7 @@ const projects = [
         description: 'This is a project',
         stack: [
             {name: "HTML5"}, {name: "CSS3"}, {name: "JavaScript"}, {name: "Figma"}, {name: "GitHub"}],
-            image: '/assets/work/thumb1.png',
+            video: '/assets/work/thumb1.png',
             live: 'https://www.google.com',
             github: 'https://www.github.com',
     },
@@ -129,11 +129,19 @@ const Work = () => {
                                 <SwiperSlide key={index} className="w-full">
                                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                                         {/* Overlay */}
-                                        <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                        {/* <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div> */}
                                         {/* Image */}
-                                        <div className="relative w-full h-full">
+                                        {/* <div className="relative w-full h-full">
                                             <Image src={project.image} fill className="object-cover" alt="imagen proyecto"/>
-                                        </div>  
+                                        </div>   */}
+                                        <video
+                                            src={project.video}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            controls
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                 </SwiperSlide>
                                 );
